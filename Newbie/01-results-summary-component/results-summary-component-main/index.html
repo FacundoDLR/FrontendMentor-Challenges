@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Results summary component</title>
+  <link rel="stylesheet" href="./styles.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -16,32 +17,82 @@
 </head>
 <body>
 
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
+  <main>
+    <div class="containerCard">
+      <section class="blueSection">
+        <div class="blueSection__container">
+          <h2 class="blueSection__container--title">Your Result</h2>
+          <div class="blueSection__container--bubble">
+            <p><strong>76</strong></p>
+            <p>of 100</p>
+          </div>
+    
+          <h3 class="blueSection__container--result"> Great</h3>
+          <p class="blueSection__container--resultDesciption">You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+      </section>
   
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
+      <section class="whiteSection">
+        <div class="whiteSection__container">
+          <h1 class="whiteSection__container--title">Summary</h1>
   
+          <article class="whiteSection__container--article">
+            <div class="whiteSection__container--articleContainer">
+              <div class="articleContainerTitle">
+                <img src="./assets/images/icon-reaction.svg" alt="">
+                <p><strong>Reaction</strong></p>
+              </div>
+              <div class="articleContainerPoints">
+                <p><strong>80</strong> / 100</p>
+              </div>
+            </div>
+          </article>
+          <article class="whiteSection__container--article">
+            <div class="whiteSection__container--articleContainer">
+              <div class="articleContainerTitle">
+                <img src="./assets/images/icon-memory.svg" alt="">
+                <p><strong>Memory</strong></p>
+              </div>
+              <div class="articleContainerPoints">
+                <p><strong>92</strong> / 100</p>
+              </div>
+            </div>
+          </article>
+          <article class="whiteSection__container--article">
+            <div class="whiteSection__container--articleContainer">
+              <div class="articleContainerTitle">
+                <img src="./assets/images/icon-verbal.svg" alt="">
+                <p><strong>Verbal</strong></p>
+              </div>
+              <div class="articleContainerPoints">
+                <p><strong>61</strong> / 100</p>
+              </div>
+            </div>
+          </article>
+          <article class="whiteSection__container--article">
+            <div class="whiteSection__container--articleContainer">
+              <div class="articleContainerTitle">
+                <img src="./assets/images/icon-visual.svg" alt="">
+                <p><strong>Visual</strong></p>
+              </div>
+              <div class="articleContainerPoints">
+                <p><strong>72</strong> / 100</p>
+              </div>
+            </div>
+          </article>
+          
+          <div class="whiteSection__container--button">
+            <button>Continue</button>
+          </div>
+  
+        </div>
+      </section>
+    </div>
+  </main>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Facundo De los Rios</a>.
   </div>
 </body>
 </html>
