@@ -15,8 +15,9 @@
 .blueSection{
     width: 100%;
     height: 40dvh;
-    background-color: aqua;
+    background: linear-gradient( hsl(252, 100%, 67%),hsl(241, 81%, 54%));
     border-radius: 0 0 32px 32px;
+    color: #fff;
 }
 
 .blueSection__container{
@@ -25,13 +26,20 @@
     place-items: center;
 }
 
+.blueSection__container--title,
+.blueSection__container--bubble p:nth-child(2),
+.blueSection__container--resultDesciption{
+    color: hsl(241, 100%, 89%);
+    opacity: 80%;
+}
+
 .blueSection__container--bubble{
-    height: 6rem;
-    width: 6rem;
+    height: 7rem;
+    width: 7rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: blueviolet;
+    background: linear-gradient( hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
     border-radius: 50%;
     align-items: center;
 }
@@ -57,8 +65,7 @@
 }
 
 .whiteSection__container--article{
-    height: 3rem;
-    
+    height: 4rem;
     display: flex;
     align-items: center;
     padding: 0 0.7rem;
@@ -81,12 +88,29 @@
     display: flex;
     justify-content: space-between;
 }
+.whiteSection__container--article:nth-child(2) .whiteSection__container--articleContainer .articleContainerTitle{
+    color: #F55;
+}
+.whiteSection__container--article:nth-child(3) .whiteSection__container--articleContainer .articleContainerTitle{
+    color: #FFB21E;
+}
+.whiteSection__container--article:nth-child(4) .whiteSection__container--articleContainer .articleContainerTitle{
+    color: #00BB8F;
+}
+.whiteSection__container--article:nth-child(5) .whiteSection__container--articleContainer .articleContainerTitle{
+    color: #1125D6;
+}
+
+.articleContainerPoints{
+    font-weight: bold;
+    color: hsl(224, 30%, 27%);
+}
 .whiteSection__container{
     height: 100%;
     padding: 5% 7%;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    justify-content: space-around;
 }
 
 .articleContainerTitle{
@@ -95,9 +119,11 @@
 }
 button{
     width: 100%;
-    height: 3rem;
+    height: 4rem;
     border-radius: 24px;
     border: none;
     cursor: pointer;
     background-color: #303B59;
+    font-size: 1.125rem;
+    color: #fff;
 }
